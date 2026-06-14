@@ -6,6 +6,9 @@ jobs:
     first_job:
         runs-on: ubuntu-lates
         steps:
+            - name: checkout repository
+              uses: actions/checkout@v6
+              
             - name: welcome message
               run: echo "My first job"
 
