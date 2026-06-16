@@ -5,19 +5,13 @@ on: push
 jobs: 
     build:
         runs-on: ubuntu-latest
-
+steps:
+  - name: check out code
+  uses: actions/checkout@v4
+  - name: printing folders
+  run: ls
+        #0. checkout the code from repo
         #1. install dependencies of react application
-        #
+        #2. execute automated tests
     
-        steps:
-            - name: Say Hello
-              run: echo "Hello World"
-    echo-goodbye:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Successful step
-              run: |
-                echo "I will succeed"
-                exit 0   
-            - name: Say Goodbye
-              run: echo "Goodbye World"
+ 
